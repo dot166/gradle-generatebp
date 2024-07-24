@@ -46,8 +46,8 @@ internal class GenerateBp(
         append("//\n")
         append(
             ReuseUtils.generateReuseCopyrightContent(
-                License.APACHE_2_0,
-                listOf("The LineageOS Project"),
+                License.GPL_3_0,
+                listOf("._______166"),
                 initialYear = null,
                 addNewlineBetweenCopyrightAndLicense = false,
                 addEndingNewline = false,

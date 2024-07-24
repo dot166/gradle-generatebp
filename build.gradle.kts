@@ -1,10 +1,10 @@
 /*
- * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2023-2024 The LineageOS Project 2024 ._______166
  * SPDX-License-Identifier: Apache-2.0
  */
 
 group = "org.lineageos"
-version = "1.13"
+version = "1.13 - MOD"
 
 plugins {
     `kotlin-dsl`
@@ -24,7 +24,7 @@ publishing {
         create<MavenPublication>("pluginMaven") {
             pom {
                 name.set(rootProject.name)
-                url.set("https://github.com/lineage-next/gradle-generatebp")
+                url.set("https://github.com/dot166/gradle-generatebp")
 
                 licenses {
                     license {
@@ -37,6 +37,10 @@ publishing {
                     developer {
                         name.set("The LineageOS Project")
                         url.set("https://lineageos.org")
+                    }
+                    developer {
+                        name.set("._______166")
+                        url.set("https://dot166.github.io")
                     }
                 }
             }
