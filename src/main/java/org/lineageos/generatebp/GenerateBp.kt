@@ -288,7 +288,7 @@ internal class GenerateBp(
     }
 
     private val Module.aospModuleName
-        get() = if (isAvailableInAOSP(this)) {
+        get() = if (isAvailableInAOSP(this) || ("${group}:${name}" == "jOS.Core:j-SDK-core")) {
             moduleNameAOSP("${group}:${name}")
         } else {
             "${project.rootProject.name}_${group}_${name}"
