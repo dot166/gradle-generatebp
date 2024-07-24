@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lineageos</groupId>
   <artifactId>gradle-generatebp</artifactId>
-  <version>1.9.1 - MOD</version>
+  <version>1.9 - MOD</version>
   <name>gradle-generatebp</name>
   <url>https://github.com/dot166/gradle-generatebp</url>
   <licenses>

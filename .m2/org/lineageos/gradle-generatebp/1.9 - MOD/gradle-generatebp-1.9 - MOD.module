@@ -3,7 +3,7 @@
   "component": {
     "group": "org.lineageos",
     "module": "gradle-generatebp",
-    "version": "1.9.1 - MOD",
+    "version": "1.9 - MOD",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -27,13 +27,13 @@
       },
       "files": [
         {
-          "name": "gradle-generatebp-1.9.1 - MOD.jar",
-          "url": "gradle-generatebp-1.9.1 - MOD.jar",
-          "size": 81433,
-          "sha512": "f4c2e038d61a2ab0b381ec90bf63598bdf838f1258fbf5e310e34ca4a780089b9542373c65dd9c383c33edf6e6bcbd035260895fa36bf95bb0b64bc2accc85f2",
-          "sha256": "1c3bdc46bf0665707a1490bf5445854b6a686020ed06e50532ec2fa4299ebb2b",
-          "sha1": "1c86378d10dd13bb4cc6665d2e45dfa6f7f8ea1f",
-          "md5": "b50167a434476a7f60939085db6f670d"
+          "name": "gradle-generatebp-1.9 - MOD.jar",
+          "url": "gradle-generatebp-1.9 - MOD.jar",
+          "size": 81466,
+          "sha512": "5b23811ec66c7b65e4ba3881507fd2ebc8801b6a65fdd85c987ddd3059a140c7e4f33aa7e5efab21ec0673f7935d307ae2e978858f24939da7fcfdbaf44520b1",
+          "sha256": "40c57616af6c6d5c28b9189abd89bbb088e74cce36a442821f17c4e92c7938a2",
+          "sha1": "2dd05164928565ccb599ba57c7ceaccd51bc1e25",
+          "md5": "9517407a07230537a644371d1fbdfaac"
         }
       ]
     },
@@ -50,13 +50,13 @@
       },
       "files": [
         {
-          "name": "gradle-generatebp-1.9.1 - MOD.jar",
-          "url": "gradle-generatebp-1.9.1 - MOD.jar",
-          "size": 81433,
-          "sha512": "f4c2e038d61a2ab0b381ec90bf63598bdf838f1258fbf5e310e34ca4a780089b9542373c65dd9c383c33edf6e6bcbd035260895fa36bf95bb0b64bc2accc85f2",
-          "sha256": "1c3bdc46bf0665707a1490bf5445854b6a686020ed06e50532ec2fa4299ebb2b",
-          "sha1": "1c86378d10dd13bb4cc6665d2e45dfa6f7f8ea1f",
-          "md5": "b50167a434476a7f60939085db6f670d"
+          "name": "gradle-generatebp-1.9 - MOD.jar",
+          "url": "gradle-generatebp-1.9 - MOD.jar",
+          "size": 81466,
+          "sha512": "5b23811ec66c7b65e4ba3881507fd2ebc8801b6a65fdd85c987ddd3059a140c7e4f33aa7e5efab21ec0673f7935d307ae2e978858f24939da7fcfdbaf44520b1",
+          "sha256": "40c57616af6c6d5c28b9189abd89bbb088e74cce36a442821f17c4e92c7938a2",
+          "sha1": "2dd05164928565ccb599ba57c7ceaccd51bc1e25",
+          "md5": "9517407a07230537a644371d1fbdfaac"
         }
       ]
     }
