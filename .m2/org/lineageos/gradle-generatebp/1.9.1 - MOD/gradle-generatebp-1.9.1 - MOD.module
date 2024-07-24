@@ -3,7 +3,7 @@
   "component": {
     "group": "org.lineageos",
     "module": "gradle-generatebp",
-    "version": "1.9 - MOD",
+    "version": "1.9.1 - MOD",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -27,8 +27,8 @@
       },
       "files": [
         {
-          "name": "gradle-generatebp-1.9 - MOD.jar",
-          "url": "gradle-generatebp-1.9 - MOD.jar",
+          "name": "gradle-generatebp-1.9.1 - MOD.jar",
+          "url": "gradle-generatebp-1.9.1 - MOD.jar",
           "size": 81433,
           "sha512": "f4c2e038d61a2ab0b381ec90bf63598bdf838f1258fbf5e310e34ca4a780089b9542373c65dd9c383c33edf6e6bcbd035260895fa36bf95bb0b64bc2accc85f2",
           "sha256": "1c3bdc46bf0665707a1490bf5445854b6a686020ed06e50532ec2fa4299ebb2b",
@@ -50,8 +50,8 @@
       },
       "files": [
         {
-          "name": "gradle-generatebp-1.9 - MOD.jar",
-          "url": "gradle-generatebp-1.9 - MOD.jar",
+          "name": "gradle-generatebp-1.9.1 - MOD.jar",
+          "url": "gradle-generatebp-1.9.1 - MOD.jar",
           "size": 81433,
           "sha512": "f4c2e038d61a2ab0b381ec90bf63598bdf838f1258fbf5e310e34ca4a780089b9542373c65dd9c383c33edf6e6bcbd035260895fa36bf95bb0b64bc2accc85f2",
           "sha256": "1c3bdc46bf0665707a1490bf5445854b6a686020ed06e50532ec2fa4299ebb2b",
