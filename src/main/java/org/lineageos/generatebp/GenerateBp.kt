@@ -288,7 +288,7 @@ internal class GenerateBp(
     }
 
     private val Module.aospModuleName
-        get() = if (isAvailableInAOSP(this) || ("${group}:${name}" == "jOS.Core:j-SDK-core")) {
+        get() = if (isAvailableInAOSP(this) || ("${group}:${name}" == "jOS.Core:j-SDK-core") || ("${group}:${name}" == "com.kieronquinn.smartspacer:sdk-client")) {
             moduleNameAOSP("${group}:${name}")
         } else {
             "${project.rootProject.name}_${group}_${name}"
@@ -343,6 +343,7 @@ internal class GenerateBp(
             "org.jetbrains.kotlinx:kotlinx-coroutines-reactive" -> "kotlinx_coroutines_reactive"
             "org.jetbrains.kotlinx:kotlinx-coroutines-rx2" -> "kotlinx_coroutines_rx2"
             "jOS.Core:j-SDK-core" -> "j.SDK"
+	    "com.kieronquinn.smartspacer:sdk-client" -> "SmartspacerClient"
             else -> moduleName.replace(":", "_")
         }
 
