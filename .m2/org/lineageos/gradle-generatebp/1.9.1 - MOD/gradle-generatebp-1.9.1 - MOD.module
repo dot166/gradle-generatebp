@@ -29,11 +29,11 @@
         {
           "name": "gradle-generatebp-1.9.1 - MOD.jar",
           "url": "gradle-generatebp-1.9.1 - MOD.jar",
-          "size": 81577,
-          "sha512": "a695038052198c1131e54194a98f218255637803fbab28ebd11da899f6e5f8d0b990ee14b0738f1a4ff49915466acaa1397a7f433f4b9fad3bf08d9bbe195e3a",
-          "sha256": "5c7901e15988966e825db8a3cd513f6ea3517af4c959e6be3a3dc52a1145cccf",
-          "sha1": "c9073ec88e7ab3706df776477cfd1c3e1fef6cec",
-          "md5": "34b83d3ef63102848d8df991017b7296"
+          "size": 81677,
+          "sha512": "2fe19eaef4a763f42ad7cf19a070e550e6587b993e1c80ab0c6a6b449b4e232c78284b04016e16908dc49205d28c42f765ad74015fc9a9f7c7d09fdcd952ad8b",
+          "sha256": "3c108f0090a01cb519376096c761daf6273d34eb125518020249618d11072cd3",
+          "sha1": "82b5898de49e50fe791fae9c3d54e69093f5c9ad",
+          "md5": "b2d8e70362db93968e2dae488043e2dc"
         }
       ]
     },
@@ -52,11 +52,11 @@
         {
           "name": "gradle-generatebp-1.9.1 - MOD.jar",
           "url": "gradle-generatebp-1.9.1 - MOD.jar",
-          "size": 81577,
-          "sha512": "a695038052198c1131e54194a98f218255637803fbab28ebd11da899f6e5f8d0b990ee14b0738f1a4ff49915466acaa1397a7f433f4b9fad3bf08d9bbe195e3a",
-          "sha256": "5c7901e15988966e825db8a3cd513f6ea3517af4c959e6be3a3dc52a1145cccf",
-          "sha1": "c9073ec88e7ab3706df776477cfd1c3e1fef6cec",
-          "md5": "34b83d3ef63102848d8df991017b7296"
+          "size": 81677,
+          "sha512": "2fe19eaef4a763f42ad7cf19a070e550e6587b993e1c80ab0c6a6b449b4e232c78284b04016e16908dc49205d28c42f765ad74015fc9a9f7c7d09fdcd952ad8b",
+          "sha256": "3c108f0090a01cb519376096c761daf6273d34eb125518020249618d11072cd3",
+          "sha1": "82b5898de49e50fe791fae9c3d54e69093f5c9ad",
+          "md5": "b2d8e70362db93968e2dae488043e2dc"
         }
       ]
     }
