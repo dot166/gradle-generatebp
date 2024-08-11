@@ -3,11 +3,11 @@
   <groupId>org.lineageos</groupId>
   <artifactId>gradle-generatebp</artifactId>
   <versioning>
-    <latest>1.9.1 - MOD</latest>
-    <release>1.9.1 - MOD</release>
+    <latest>1.9.2 - MOD</latest>
+    <release>1.9.2 - MOD</release>
     <versions>
-      <version>1.9.1 - MOD</version>
+      <version>1.9.2 - MOD</version>
     </versions>
-    <lastUpdated>20240725134313</lastUpdated>
+    <lastUpdated>20240811170039</lastUpdated>
   </versioning>
 </metadata>
