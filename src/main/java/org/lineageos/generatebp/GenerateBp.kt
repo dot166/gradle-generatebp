@@ -100,6 +100,8 @@ internal class GenerateBp(
 
             var isAndroid: Boolean
 
+            var targetver: String = "current"
+
             val mainAndroidBpPlaceholder = buildString {
                 if (project.plugins.hasPlugin("com.android.application")) {
                     append("android_app {\n")
@@ -198,6 +200,9 @@ internal class GenerateBp(
                 }
 
                 it.artifact?.also { artifact ->
+                    if (artifact.targetSdkVersion <= 34) {
+                        targetver = artifact.targetSdkVersion
+                    }
                     when (artifact.fileType) {
                         Artifact.FileType.AAR -> {
                             file.appendText(
@@ -206,7 +211,7 @@ internal class GenerateBp(
                                 android_library_import {
                                     name: "${it.aospModuleName}-nodeps",
                                     aars: ["${it.aospModulePath}/${artifact.file.name}"],
-                                    sdk_version: "${artifact.targetSdkVersion}",
+                                    sdk_version: "${targetver}",
                                     min_sdk_version: "${artifact.minSdkVersion}",
                                     apex_available: [
                                         "//apex_available:platform",
@@ -222,7 +227,7 @@ internal class GenerateBp(
     
                                 android_library {
                                     name: "${it.aospModuleName}",
-                                    sdk_version: "${artifact.targetSdkVersion}",
+                                    sdk_version: "${targetver}",
                                     min_sdk_version: "${artifact.minSdkVersion}",
                                     apex_available: [
                                         "//apex_available:platform",
@@ -247,7 +252,7 @@ internal class GenerateBp(
                                 java_import {
                                     name: "${it.aospModuleName}-nodeps",
                                     jars: ["${it.aospModulePath}/${artifact.file.name}"],
-                                    sdk_version: "${artifact.targetSdkVersion}",
+                                    sdk_version: "${targetver}",
                                     min_sdk_version: "${artifact.minSdkVersion}",
                                     apex_available: [
                                         "//apex_available:platform",
@@ -257,7 +262,7 @@ internal class GenerateBp(
     
                                 java_library_static {
                                     name: "${it.aospModuleName}",
-                                    sdk_version: "${artifact.targetSdkVersion}",
+                                    sdk_version: "${targetver}",
                                     min_sdk_version: "${artifact.minSdkVersion}",
                                     apex_available: [
                                         "//apex_available:platform",
