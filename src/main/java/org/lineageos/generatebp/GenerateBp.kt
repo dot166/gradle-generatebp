@@ -100,8 +100,6 @@ internal class GenerateBp(
 
             var isAndroid: Boolean
 
-            var targetver: String = "current"
-
             val mainAndroidBpPlaceholder = buildString {
                 if (project.plugins.hasPlugin("com.android.application")) {
                     append("android_app {\n")
@@ -156,6 +154,8 @@ internal class GenerateBp(
                 )
             )
         }
+
+        var targetver: String = "current"
 
         // Update app/libs
         allDependencies.forEach {
