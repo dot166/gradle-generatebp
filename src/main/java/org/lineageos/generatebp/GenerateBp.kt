@@ -201,7 +201,7 @@ internal class GenerateBp(
 
                 it.artifact?.also { artifact ->
                     if (artifact.targetSdkVersion <= 34) {
-                        targetver = artifact.targetSdkVersion
+                        targetver = artifact.targetSdkVersion.toString()
                     }
                     when (artifact.fileType) {
                         Artifact.FileType.AAR -> {
