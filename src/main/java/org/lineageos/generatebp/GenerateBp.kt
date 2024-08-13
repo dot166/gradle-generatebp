@@ -302,7 +302,7 @@ internal class GenerateBp(
     }
 
     private val Module.aospModuleName
-        get() = if (isAvailableInAOSP(this) || ("${group}:${name}" == "jOS.Core:j-SDK-core") || ("${group}:${name}" == "com.kieronquinn.smartspacer:sdk-client")) {
+        get() = if (isAvailableInAOSP(this) || ("${group}:${name}" == "jOS.Core:j-SDK-core") || ("${group}:${name}" == "com.kieronquinn.smartspacer:sdk-client") || ("${group}:${name}" == "io.github.dot166:j-Lib")) {
             moduleNameAOSP("${group}:${name}")
         } else {
             "${project.rootProject.name}_${group}_${name}"
