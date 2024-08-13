@@ -357,6 +357,7 @@ internal class GenerateBp(
             "org.jetbrains.kotlinx:kotlinx-coroutines-reactive" -> "kotlinx_coroutines_reactive"
             "org.jetbrains.kotlinx:kotlinx-coroutines-rx2" -> "kotlinx_coroutines_rx2"
             "jOS.Core:j-SDK-core" -> "j.SDK"
+            "io.github.dot166:j-Lib" -> "j.Lib"
 	    "com.kieronquinn.smartspacer:sdk-client" -> "SmartspacerClient"
             else -> moduleName.replace(":", "_")
         }
