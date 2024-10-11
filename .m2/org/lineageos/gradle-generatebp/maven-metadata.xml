@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.lineageos</groupId>
+  <artifactId>gradle-generatebp</artifactId>
+  <versioning>
+    <latest>1.13 - MOD</latest>
+    <release>1.13 - MOD</release>
+    <versions>
+      <version>1.13 - MOD</version>
+    </versions>
+    <lastUpdated>20241011182658</lastUpdated>
+  </versioning>
+</metadata>
