@@ -42,10 +42,6 @@ jobs:
         ./gradlew \
           -Dmaven.repo.local=$GITHUB_WORKSPACE/.m2 \
           app:generateBp
-        if [[ ! -z $(git status -s .) ]]; then
-          git status
-          exit -1
-        fi
 
     - name: Commit changes
       run: |
