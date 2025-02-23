@@ -178,6 +178,11 @@ object Constants {
             else -> null
         }
 
+        "io.github.dot166" -> when (name) {
+            "j-Lib" -> "j.Lib"
+            else -> null
+        }
+
         else -> null
     } ?: "${group}_${name}"
 
