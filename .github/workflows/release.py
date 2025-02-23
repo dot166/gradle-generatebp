@@ -8,7 +8,7 @@ with open("build.gradle.kts", "r+") as f:
         if line.startswith("version = "):
             version = line[11:-2]
             version_new = (
-                f'{version.split(".")[0]}.{str(int(version.split(".")[1]) + 1)}'
+                f'{version.split(".")[0]}.{str(int(version.split(".")[1]) + 1)}.{version.split(".")[2]}'
             )
             line = f'version = "{version_new}"\n'
 
