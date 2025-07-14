@@ -104,10 +104,6 @@ internal class GenerateBp(
                     // Replace existing dependencies with newly generated ones
                     "static_libs: \\[.*?]".toRegex(RegexOption.DOT_MATCHES_ALL),
                     "static_libs: [%s]".format(dependenciesString)
-                ).replace(
-                    // Replace existing sdk_version with one from targetSdk
-                    "sdk_version: \"\\d+\"".toRegex(),
-                    "sdk_version: \"${targetSdk}\""
                 )
             )
         }
