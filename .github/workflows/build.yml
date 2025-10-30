@@ -53,8 +53,13 @@ jobs:
         git add .m2
         git commit -m "Publish maven artifacts" || true
 
+    - name: Bump version
+      if: github.event_name == 'workflow_dispatch'
+      run: ./.github/workflows/release.py
+
     - name: Push changes to repo
       if: github.event_name == 'workflow_dispatch'
       uses: ad-m/github-push-action@master
       with:
         branch: ${{ github.ref }}
+        tags: true
