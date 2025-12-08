@@ -131,6 +131,10 @@ internal class GenerateBp(
                     // Replace existing sdk_version with one from targetSdk
                     "sdk_version: \"\\d+\"".toRegex(),
                     "sdk_version: \"${targetSdk}\""
+                ).replace(
+                    // Replace existing min_sdk_version with one from minSdk
+                    "min_sdk_version: \"\\d+\"".toRegex(),
+                    "min_sdk_version: \"${minSdk}\""
                 )
             )
         }
