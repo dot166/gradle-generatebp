@@ -59,6 +59,7 @@ android {
 dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.common)
     implementation(libs.coil)
     implementation(libs.coil.network.okhttp)
     testImplementation(libs.junit)

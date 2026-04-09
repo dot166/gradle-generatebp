@@ -10,6 +10,7 @@ appcompat = "1.6.1"
 coil = "3.0.0-rc02"
 core = "1.12.0"
 junit = "4.13.2"
+lifecycle = "2.8.0"
 material = "1.12.0"
 test-ext = "1.1.5"
 test-espresso = "3.5.1"
@@ -18,6 +19,7 @@ generateBp = "+"
 [libraries]
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+androidx-lifecycle-common = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-common", version.ref = "lifecycle" }
 coil = { group = "io.coil-kt.coil3", name = "coil", version.ref = "coil" }
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

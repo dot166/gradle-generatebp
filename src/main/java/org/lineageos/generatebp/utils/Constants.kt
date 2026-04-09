@@ -58,7 +58,7 @@ object Constants {
     /**
      * Get the name of this module in the AOSP build system.
      */
-    fun ModuleIdentifier.getAospAvailableModuleName() = fixupAndroidXKmpSuffix() ?: when (group) {
+    fun ModuleIdentifier.getAospAvailableModuleName() = fixupAndroidXKmpLibrary() ?: when (group) {
         "androidx.constraintlayout" -> when (name) {
             "constraintlayout" -> "androidx-constraintlayout_constraintlayout"
             else -> null
@@ -174,14 +174,27 @@ object Constants {
     /**
      * @see Constants.androidXKmpSuffixes
      */
-    private fun ModuleIdentifier.fixupAndroidXKmpSuffix() = when (group.startsWith("androidx.")) {
-        true -> androidXKmpSuffixes.firstNotNullOfOrNull {
-            when (name.endsWith(it)) {
-                true -> "${group}_${name.removeSuffix(it)}"
-                false -> null
+    private fun ModuleIdentifier.fixupAndroidXKmpLibrary(): String? {
+        var needsFixup = false
+
+        val group = group.run {
+            when {
+                startsWith("org.jetbrains.androidx.") -> {
+                    needsFixup = true
+                    removePrefix("org.jetbrains.")
+                }
+
+                startsWith("androidx.") -> this
+
+                else -> return null
             }
         }
 
-        false -> null
+        return androidXKmpSuffixes.firstOrNull(name::endsWith)?.let {
+            "${group}_${name.removeSuffix(it)}"
+        } ?: when (needsFixup) {
+            true -> "${group}_${name}"
+            false -> null
+        }
     }
 }
