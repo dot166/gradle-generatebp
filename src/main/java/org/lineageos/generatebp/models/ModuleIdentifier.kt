@@ -20,16 +20,6 @@ open class ModuleIdentifier(
     val name: String,
     val version: String,
 ) : Comparable<ModuleIdentifier> {
-    /**
-     * Get the name of this module as a Gradle dependency.
-     */
-    val gradleName = "$group:$name:$version"
-
-    /**
-     * Get the relative path to the module in an AOSP build system.
-     */
-    val aospModulePath = "${group.replace(".", "/")}/${name}/${version}"
-
     override fun compareTo(other: ModuleIdentifier) = compareValuesBy(
         this, other,
         ModuleIdentifier::group,
@@ -43,5 +33,5 @@ open class ModuleIdentifier(
         ModuleIdentifier::name,
     )
 
-    override fun toString() = gradleName
+    override fun toString() = "$group:$name:$version"
 }

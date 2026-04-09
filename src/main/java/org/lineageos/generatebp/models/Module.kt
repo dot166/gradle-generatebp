@@ -21,4 +21,9 @@ class Module(
     val dependencies: Set<ModuleIdentifier>,
     val artifact: Artifact?,
     val treatAsFirstLevelDependency: Boolean,
-) : ModuleIdentifier(group, name, version)
+) : ModuleIdentifier(group, name, version) {
+    /**
+     * Get the relative path to the module in an AOSP build system.
+     */
+    val aospModulePath = "${group.replace(".", "/")}/${name}/${version}"
+}
