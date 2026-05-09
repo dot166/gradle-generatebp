@@ -291,8 +291,22 @@ internal class GenerateBp(
     private fun Sequence<ModuleIdentifier>.mapToAospModuleNames() = this
         .distinct()
         .sorted()
+        .fixSettingsLib()
         .map { "\"${it.getAospModuleName()}\"," }
         .distinct()
+
+    private fun Sequence<ModuleIdentifier>.fixSettingsLib(): Sequence<ModuleIdentifier> {
+        val set = toMutableSet()
+        for (mod in set.getModules()) {
+            if (mod.name == "SettingsLib") {
+                set.remove(mod)
+                for (dep in mod.dependencies) {
+                    set.add(dep)
+                }
+            }
+        }
+        return set.asSequence()
+    }
 
     /**
      * Recursively apply the effects of the quirks to this [Sequence] of [ModuleIdentifier]s.
