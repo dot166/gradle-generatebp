@@ -170,7 +170,7 @@ object Constants {
 
         "io.github.dot166" -> when {
             name.startsWith("SettingsLib") -> name
-            name == "j-Lib" -> "j.Lib"
+            name == "j-Lib" -> name
             else -> null
         }
 
