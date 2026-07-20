@@ -168,12 +168,7 @@ object Constants {
             else -> null
         }
 
-        "io.github.dot166" -> when {
-            name.startsWith("SettingsLib") -> name
-            name == "j-Lib" -> name
-            name == "SpaLib" -> name
-            else -> null
-        }
+        "io.github.dot166" -> name // all my modules are formatted as $name, so just pass name
 
         else -> null
     } ?: "${group}_${name}"
