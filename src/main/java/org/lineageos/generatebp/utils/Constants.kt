@@ -170,6 +170,8 @@ object Constants {
 
         "io.github.dot166" -> name // all my modules are formatted as $name, so just pass name
 
+        "dev.patrickgold.jetpref" -> name // all jetpref modules are formatted as $name, so just pass name
+
         else -> null
     } ?: "${group}_${name}"
 
