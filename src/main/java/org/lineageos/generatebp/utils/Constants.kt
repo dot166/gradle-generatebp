@@ -170,7 +170,9 @@ object Constants {
 
         "io.github.dot166" -> name // all my modules are formatted as $name, so just pass name
 
-        "dev.patrickgold.jetpref" -> name // all jetpref modules are formatted as $name, so just pass name
+        "dev.patrickgold.jetpref" -> androidXKmpSuffixes.firstOrNull(name::endsWith)?.let {
+            name.removeSuffix(it)
+        } ?: name // all jetpref modules are formatted as $name, so just pass name, jetpref is a kmp library so trim kmp suffix too
 
         else -> null
     } ?: "${group}_${name}"
