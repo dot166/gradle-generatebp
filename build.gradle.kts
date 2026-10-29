@@ -4,7 +4,7 @@
  */
 
 group = "org.lineageos"
-version = "1.36"
+version = "1.37"
 
 plugins {
     `kotlin-dsl`
