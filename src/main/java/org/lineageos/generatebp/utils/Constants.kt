@@ -188,6 +188,11 @@ object Constants {
                     removePrefix("org.jetbrains.")
                 }
 
+                startsWith("org.jetbrains.compose.") -> {
+                    needsFixup = true
+                    replace("org.jetbrains.", "androidx.")
+                }
+
                 startsWith("androidx.") -> this
 
                 else -> return null
